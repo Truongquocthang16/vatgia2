@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Document</title>
+    <style>
+        .row1{
+            background-color: white; 
+           
+          
+
+        }
+        .row2{
+            background-color: white;
+            padding-left: 10%;
+
+            
+        }
+        .row3{
+            background-color: rgb(0, 115, 255);
+            text-align: right;
+            color: white;
+            list-style: none;
+            text-decoration: none;
+            padding: 5px 10px;
+           
+        }
+        .row5{
+            width: 100%;
+            clear: both;
+            padding-left: 15%;
+            padding-right: 40%;
+            
+    
+            
+        }
+        
+        .box2{
+            height: 80px;
+            width: 10%;
+            border: 1px solid black;
+            float: left;
+            text-align: center;
+            margin: 5px;
+            background-color: blanchedalmond;
+        }
+        .row6, .row7{
+            width: 100%;
+            clear: both;
+            padding-left: 7%;
+            padding-right: 5%;
+        }
+        .box3{
+            height: 80px;
+            width: 12%;
+            border: 1px solid black;
+            float: left;
+            text-align: center;
+            margin: 6px;
+            background-color: white;
+        }
+        .row8 {
+            border: 1px solid blue;
+            background: yellow;
+            height: 200px;
+            width: 65%;
+        }
+        .box4{
+            height: 80px;
+            width: 8%;
+            border: 1px solid black;
+            float: left;
+            text-align: center;
+            margin: 6px;
+            background-color: green;
+        }
+        .row9{
+            background-color: darkgrey;
+            text-align: left;
+        }
+        table, th , td{
+            border: 1px solid rgb(174, 158, 158);
+            border-collapse: collapse;
+            width: 750px;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-family: "Roboto_Regular";
+            
+            
+        }
+        
+        .menu {
+        float: left;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: darkgrey;
+        font-size: 15px; 
+        
+    }
+    .c1{
+        float: right;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: darkgrey;
+        font-size: 15px;
+       
+    }
+    .c2{
+        text-align: center;
+        color: crimson;
+    }
+    .c4{
+        clear: both;
+        
+    }
+    .c5{
+        clear: both;  
+       
+    }
+    .search {
+  width: 50%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid blue;
+border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+}
+
+.searchTerm:focus{
+  color:blue;
+}
+
+.searchButton {
+  width: 100px;
+  height: 36px;
+  border: 1px solid blue;
+  background: blue;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.wrap{
+  width: 80%;
+  position: absolute;
+  top:45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container {
+    margin: 0 auto;
+    position: relative;
+    width: 1200px;
+    overflow: hidden;
+    font-family: "Roboto_Regular";
+
+
+}
+
+.hover{
+    transform: translateY(-20px);
+}
+.menu2{
+        float: left;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: gray;
+        font-size: 15px; 
+        
+        
+    }
+    .c6{
+        float: right;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: gray;
+        font-size: 15px;
+    }
+    .table1{
+    height: 49px;
+    font-size: 10px;
+    
+
+    }
+    .menu3{
+        float: left;
+        list-style: none;
+        text-decoration: none;
+        padding: 5px 10px;
+        color: white;
+        font-size: 16px; 
+        font-family: "Roboto_Regular"
+    }
+    .c7:hover{
+        color: blue;
+    }
+    .c7{
+        cursor: pointer;
+        list-style: none;
+        text-decoration: none;  
+    }
+    .a1{
+        font-size: 25px;
+        color: rgb(0, 187, 255);
+        padding-left: 7%;
+    }
+    .a2{
+        font-size: 15px;
+        padding-left: 7%;
+        list-style: none;
+    }
+    .menu6{
+        list-style: none;
+        text-decoration: none;
+        color: darkgrey;
+        font-size: 11px; 
+        padding-left: 7%;
+        
+        
+
+
+    }
+    .menu5{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-size: 13px;    
+        line-height: 180%;
+    }
+    .menu5:hover{
+        color: blue;
+    }
+    .menu7{
+        list-style: none;
+        text-decoration: none;
+        color: black;
+        font-size: 13px;    
+        
+    }
+    .ul{
+        padding: 20px;
+    }
+    .ul1{
+        padding: 30px;
+        
+    }
+    .a{
+        float:right;
+    }
+
+    
+   
+
+   
+        
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div class="row1">
+        <a class="menu" href="#">Rao vặt</a>
+        <a class="menu" href="#">Tư vấn</a>
+        <a class="menu" href="#">Hỏi đáp</a>
+        <a class="menu" href="#">Hỗ trợ</a>
+        <a class="c1" href="#"><i class="far fa-user"></i>Đăng ký</a>
+        <a class="c1" href="#"><i class="fas fa-user"></i>Đăng nhập</a>
+        <a class="c1" href="#"><i class="fas fa-eye"></i>Đã xem </a>
+        <a class="c1" href="#"><i class="fas fa-globe-europe"></i></i>Thông Báo</a>
+        <a class="c1" href="#"><i class="fas fa-shopping-cart"></i>Giỏ hàng </a>
+    </div>
+    <div class="c4"></div>
+    </div>
+    <hr>
+    
+    <div class="container">
+    <div class="row2">
+        <img src="1.png" alt="">
+        <center>
+        <div class="wrap">
+        <form action="" class="search" method="post">
+        <input type="text" class="searchTerm" placeholder="Bạn muốn tìm gì?">
+        <button type="submit" class="searchButton">
+        Submit
+        </button>
+        </form>
+        </div>
+        </center>
+    </div>
+    </div>
+    
+    <div class="row3">
+        <div class="container">
+        <li class="menu3"> <i class="fas fa-tasks"></i> Danh mục sản phẩm</li>
+        <li class="menu3"> <i class="fal fa-percent"></i> khuyến mại |</li>
+        <li class="menu3"> <i class="fas fa-phone-volume"></i> liên hệ quảng cáo :02459747875 </li>
+        <li> Mua hàng qua APP</li>
+        <div class="c5"></div>
+       </div>
+        
+      
+    </div>
+    <br>
+    <div class="container">
+    <table>
+        <tr> 
+            <th><ul class="ul"><img src="3.png" alt=""></ul><li class="c7">Khuyến mãi,giảm giá</li></th>
+            <th><ul  class="ul"><img src="4.png" alt=""></ul><li class="c7">Điện thoại viễn thông</li></th>
+            <th><ul  class="ul"><img src="5.png" alt=""></ul><li class="c7">Máy tinh,linh kiện</li></th>
+            <th><ul  class="ul"><img src="6.png" alt=""></ul><li class="c7">Điên tử,điện máy</li></th>
+            <th><ul  class="ul"><img src="7.png" alt=""></ul><li class="c7">Máy ảnh,máy quay</li></th>
+            <th><ul  class="ul"><img src="8.png" alt=""></ul><li class="c7">Ô tô,xe máy,xe đạp</li></th>
+            <th><ul  class="ul"><img src="9.png" alt=""></ul><li class="c7">Thời Trang,phụ kiện</li></th>
+            <th><ul  class="ul"><img src="10.png" alt=""></ul><li class="c7">Mẹ & bé</li></th>
+
+        </tr>
+        <tr>
+            <th><ul class="ul"><img src="11.png" alt=""></ul><li class="c7">Sức khỏe, sắc đẹp</li></th>
+            <th><ul class="ul"><img src="12.png" alt=""></ul><li class="c7"> Đồ dùng,sinh hoạt</li></th>
+            <th><ul class="ul"><img src="13.png" alt=""></ul><li class="c7">Nội thất,ngoại thất</li></th>
+            <th><ul class="ul"><img src="14.png" alt=""></ul><li class="c7">Sách,văn phòng,quà tặng</li></th>
+            <th><ul class="ul"><img src="15.png" alt=""></ul><li class="c7">Thể thao</li>Thể thao</th>
+            <th><ul class="ul"><img src="16.png" alt=""></ul><li class="c7">Công nghiẹp,xây dựng</li></th>
+            <th><ul class="ul"><img src="17.png" alt=""></ul><li class="c7">Dịch vụ,giải trí</li></th>
+            <th><ul class="ul"><img src="18.png" alt=""></ul><li class="c7">Thực phẩm,đồ uống</li></th>
+        </tr>
+        
+    </table>
+        <p>
+        <table>
+            <tr> 
+                <th><ul class="ul1"><img src="27.png" alt=""> </ul> <li class="c7">Bộ đàm cầm tay Kenwood TK-3320s</li> 
+                <div class="c2">840.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="28.png" alt=""></ul><li class="c7">Bộ đàm Motorola CP 7500</li>
+                <div class="c2">1.100.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="29.png" alt=""></ul><li class="c7">Bộ đàm hypersia H1</li>
+                <div class="c2">550.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="30.png" alt=""></ul><li class="c7">Cameraa Polycom EagleEyeTM MSR</li>
+                <div class="c2">30.250.000đ</div>
+                </th>
+            </tr>
+            <tr>
+                <th><ul class="ul1"><img src="31.png" alt=""></ul> <li class="c7">Bộ đàm cầm tay GP 850</li> 
+                <div class="c2">780.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="32.png" alt=""></ul><li class="c7">Bộ đàm Motorola GP</li>
+                <div class="c2">490.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="33.png" alt=""></ul><li class="c7">Máy bộ đàm cầm tay Kenwood TK-3320</li>
+                <div class="c2">860.000đ</div>
+                </th>
+                <th><ul class="ul1"><img src="34.png" alt=""></ul><li class="c7">Loa ngoài trời AXIS C1310-E</li>
+                <div class="c2">1đ</div>
+                </th>
+            </tr>
+            </table>
+            </p>
+            <table>
+                <tr> 
+                    <th><ul class="ul1"><img src="35.png" alt=""></ul> <li class="c7"> VI SINH ĐƠN DÒNG BIOK - Nguyên liệu vi sinh đơn dòng SỬ </li> 
+                    </th>
+                    <th><ul class="ul1"><img src="36.png" alt=""></ul><li class="c7">ENZYME BIOK GIÚP TIÊU HÓA –Tăng</li>
+                    </th>
+                    <th><ul class="ul1"><img src="37.png" alt=""></ul><li class="c7">Nước ép xoài đông lạnh (puree) Tân Gia Thành</li>
+                    <div class="c2">42.000đ</div>
+                    </th>
+                    <th><ul class="ul1"><img src="38.png" alt=""></ul><li class="c7">Bơ xay nhuyễn đông lạnh (puree)</li>
+
+                        <div class="c2">59.000đ</div>
+                    </th>
+                </tr>
+                <tr>
+                    <th><ul class="ul1"><img src="39.png" alt=""></ul><li class="c7">Nước ép ổi đông lạnh Tân Gia Thành</li>
+                    <div class="c2">45.000đ</div>
+                    </th>
+                    <th><ul class="ul1"><img src="40.png" alt=""></ul><li class="c7">Nước Cốt Dưa Lưới Cô Đặc Tân Gia Thành</li>
+                    <div class="c2">490.000đ</div>
+                    </th>
+                    <th><ul class="ul1"><img src="41.png" alt=""></ul><li class="c7">Nước Ép Thơm Đông Lạnh Tân Gia Thành</li>
+
+
+                    <div class="c2">50.500đ</div>
+                    </th>
+                    <th><ul class="ul1"><img src="42.png" alt=""></ul><li class="c7">Nước Ép Dưa Lưới Đông Lạnh Tân Gia Thành</li>
+                    <div class="c2">1đ</div>
+                    </th>
+                </tr>
+                </table>
+                </p>
+                <table>
+                    <tr> 
+                        <th><ul class="ul1"><img src="19.png" alt=""></ul> <li class="c7"> Áo phao cao cấp AP- 01 </li> 
+                        <div class="c2">48.000đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="20.png" alt=""></ul><li class="c7">Áo phao KVĐ 01</li>
+                        <div class="c2">48.000đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="21.png" alt=""></ul><li class="c7">Áo phao TNH01</li>
+                        <div class="c2">48.000đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="22.png" alt=""></ul><li class="c7">Áo phao cứu hộ BL009</li>
+    
+                            <div class="c2">35.000đ</div>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th><ul class="ul1"><img src="23.png" alt=""></ul><li class="c7">Áo phao cứu hộ Thái sơn AP01</li>
+                        <div class="c2">35.000đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="24.png" alt=""></ul><li class="c7">ÁO phao 01</li>
+                        <div class="c2">45.000đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="25.png" alt=""></ul><li class="c7">Áo phao cứu hộ HP-AP02</li>
+    
+    
+                        <div class="c2">45.500đ</div>
+                        </th>
+                        <th><ul class="ul1"><img src="26.png" alt=""></ul><li class="c7">Áo phao cứu TNH01</li>
+                        <div class="c2">60.000đ</div>
+                        </th>
+                    </tr>
+                </table>
+                </div>
+                <p>
+                    <table>
+                        <tr> 
+                            <th><ul class="ul1"><img src="44.png" alt=""></ul> <li class="c7"> CANON EOS RP </li> 
+                            <div class="c2">19.500.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="45.png" alt=""></ul><li class="c7">Máy ảnh canon eos r6</li>
+                            <div class="c2">41.000.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="46.png" alt=""></ul><li class="c7">CANON EOS T6I </li>
+                            <div class="c2">11.600.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="47.png" alt=""></ul><li class="c7">ÍNTA360 ONE X2</li>
+        
+                                <div class="c2">6.000.000đ</div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th><ul class="ul1"><img src="48.png" alt=""></ul><li class="c7">LÉN CANON MACRO </li>
+                            <div class="c2">5.000.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="49.png" alt=""></ul><li class="c7">CANON EOS 4000D</li>
+                            <div class="c2">6.500.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="50.png" alt=""></ul><li class="c7">Danh sách nơi bán CANON EOS M2 + LENS KIT 18-55MM F/3.5-5.6 IS STM cập nhật mới nhất 2023</li>
+                            <div class="c2">4.700.000đ</div>
+                            </th>
+                            <th><ul class="ul1"><img src="51.png" alt=""></ul><li class="c7">Danh sách nơi bán MÁY FILM KONICA C35 AF cập nhật mới nhất 2023</li>
+                            <div class="c2">2.200.000đ</div>
+                            </th>
+                        </tr>
+                    </table>
+                    <p></p>
+    <div class="container">
+    <div class="row6">
+        <form>
+            <label>ĐĂNG KÍ XÁC NHẬN KHUYẾN MẠI </label><br />
+            <input name="id "type="Text"/>
+        </label>
+        <button type="submit">Nam</button>
+        </label>
+        <button type="submit">Nữ</button>
+        <label>
+            <br>
+            <input type="checkbox"/>
+            Tôi xác nhận là chính xác
+           </label>   
+        </form>
+     <hr>
+    </div>
+</p>
+<div>
+    <h1 class="a1">VATGIA.COM-MUA SẮM HẠNH PHÚC,KINH DOANH HIỆU QUẢ</h1>
+    <li class="a2">
+    Mua hàng trực tuyến mang lại sự tiện lợi, chủ động, lựa chọn đa dạng, với các dịch vụ hỗ trợ mua hàng, bán hàng, thanh toán an toàn, giao hàng chuyên nghiệp <br>
+    Với phương châm “Luôn đặt mình vào địa vị khách hàng và đối xử trên mong đợi của họ”, Vatgia.com không ngừng nỗ lực, cải tiến đáp ứng nhu cầu mua sắm cho người tiêu dùng. <br>
+    Vatgia đảm bảo cung cấp đúng thông tin cho đúng người, đúng lúc, đảm bảo thanh toán trực tuyến bảo mật an toàn, áp dụng hình thức vận chuyển nhanh phù hợp.
+</li>
+</div>
+</div>
+
+<hr>
+<div class="container">
+<div class="menu6">
+<a class="menu5" href="#">Giới thiệu |</a>
+<a class="menu5" href="#">Hướng dẫn |</a>
+<a class="menu5" href="#">Quy chế hoạt động |</a>
+<a class="menu5" href="#">Cơ chế giải quyết tranh chấp |</a>
+<a class="menu5" href="#">Chính sách bảo vệ thông tin |</a>
+<a class="menu5" href="#">Bất động sản</a>
+<li class="menu7">Công ty Cổ phần VNP Group. Số GCNĐKDN: 0102015284, cấp ngày 21/06/2012, nơi cấp: Sở kế hoạch và đầu tư thành phố Hà Nội</li>
+<li class="menu7">Trụ sở chính: 102 Thái Thịnh Phường Trung Liệt, Quận Đống Đa, Hà Nội - Hồ Chí Minh: 260 Nguyễn Tiểu La, Phường 8, Quận 10, Hồ Chí Minh</li>
+</div>
+</div>
+</body>
+</html>
